@@ -1,0 +1,3 @@
+# kind	scancode	keycode			flags
+key	102		HOME			WAKE
+key	766		VIRTUAL_CAMERA		WAKE
