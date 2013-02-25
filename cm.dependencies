@@ -5,7 +5,6 @@
  },
  {
     "repository": "android_kernel_sony_apq8064",
-    "target_path": "kernel/sony/apq8064",
-    "branch": "jellybean"
+    "target_path": "kernel/sony/apq8064"
   }
 ]
