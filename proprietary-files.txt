@@ -94,7 +94,7 @@ lib/libMPU3050.so
 lib/libMiscTaAccessor.so
 lib/libQSEEComAPI.so
 lib/libacdbloader.so
-lib/libalsautils.so
+lib/libals.so
 lib/libaudcal.so
 lib/libaudioalsa.so
 lib/libaudioparsers.so
