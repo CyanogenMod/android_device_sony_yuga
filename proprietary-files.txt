@@ -88,7 +88,6 @@ etc/firmware/wcnss.b04
 etc/firmware/wcnss.b05
 etc/firmware/wcnss.mdt
 lib/hw/nfc.msm8960.so
-lib/hw/sensors.default.so
 lib/libCommandSvc.so
 lib/libMPU3050.so
 lib/libMiscTaAccessor.so
