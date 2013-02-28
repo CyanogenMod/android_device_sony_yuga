@@ -24,6 +24,7 @@ MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
 
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES := \\
+    $OUTDIR/proprietary/lib/libsensors_akm8963.so:obj/lib/libsensors_akm8963.so \\
     $OUTDIR/proprietary/lib/libaudioalsa.so:obj/lib/libaudioalsa.so \\
     $OUTDIR/proprietary/lib/libacdbloader.so:obj/lib/libacdbloader.so
 
