@@ -29,8 +29,8 @@ PRODUCT_PACKAGES := \
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from yuga device
-$(call inherit-product, device/sony/fusion3-common/prebuilt/resources-xxhdpi.mk)
+# Resources
+$(call inherit-product, device/sony/qcom-common/prebuilt/resources-xxhdpi.mk)
 
 # Inherit from yuga device
 $(call inherit-product, device/sony/yuga/yuga.mk)
