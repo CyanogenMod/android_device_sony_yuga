@@ -94,6 +94,7 @@ lib/libMiscTaAccessor.so
 lib/libQSEEComAPI.so
 lib/libacdbloader.so
 lib/libals.so
+lib/libalsautils.so
 lib/libaudcal.so
 lib/libaudioalsa.so
 lib/libaudioparsers.so
