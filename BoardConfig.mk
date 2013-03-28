@@ -19,7 +19,7 @@
 -include vendor/sony/yuga/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := C6603,C6606,yuga
+TARGET_OTA_ASSERT_DEVICE := C6602,C6603,C6606,yuga
 
 TARGET_SPECIFIC_HEADER_PATH += device/sony/yuga/include
 
