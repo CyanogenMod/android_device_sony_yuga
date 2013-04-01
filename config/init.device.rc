@@ -2,6 +2,7 @@ on boot
     # Owner for the proximity sensor
     chown system system /sys/devices/i2c-2/2-0054/threshold
     chown system system /sys/devices/i2c-2/2-0054/nburst
+    write /sys/devices/i2c-2/2-0054/threshold 15
 
     # Owner for the light sensor
     chown system system /sys/devices/i2c-0/0-0036/als_enable
