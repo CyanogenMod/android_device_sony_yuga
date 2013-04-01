@@ -4,11 +4,11 @@
 
 # Proximity sensor configuration
 dev=/sys/bus/i2c/devices/2-0054/
-val_cycle=0
-val_nburst=5
-val_freq=1
-val_threshold=5
-val_filter=0
+val_cycle=1
+val_nburst=8
+val_freq=2
+val_threshold=4
+val_filter=1
 
 ta_param_loader 60240 prox_cal
 val_calibrated=$?
