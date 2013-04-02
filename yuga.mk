@@ -15,8 +15,6 @@
 # Inherit the fusion-common definitions
 $(call inherit-product, device/sony/fusion3-common/fusion3.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/sony/yuga/overlay
-
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
