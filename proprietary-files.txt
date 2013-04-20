@@ -25,8 +25,6 @@ bin/usbhub
 bin/usbhub_init
 etc/firmware/acdb.mbn
 etc/firmware/apps.mbn
-etc/firmware/cyttsp_8064_mtp.hex
-etc/firmware/cyttsp_8960_cdp.hex
 etc/firmware/dsp1.mbn
 etc/firmware/dsp2.mbn
 etc/firmware/dsp3.mbn
