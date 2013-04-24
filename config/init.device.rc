@@ -26,8 +26,7 @@ on boot
     chmod 660 /sys/class/leds/lm3533-blue/pattern
 
     # Vibrator
-    chown system system /sys/devices/i2c-12/12-0049/intensity
-    chmod 666 /sys/devices/i2c-12/12-0049/intensity
+    chown system system /sys/class/timed_output/vibrator/level
 
     # LM356x/cameralight
     chown system camera /sys/devices/i2c-0/0-0053/torch_enable

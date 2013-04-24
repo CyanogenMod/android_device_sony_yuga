@@ -61,6 +61,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/keypad_8960.kl:system/usr/keylayout/keypad_8960.kl \
     $(LOCAL_PATH)/config/keypad_8960_liquid.kl:system/usr/keylayout/keypad_8960_liquid.kl
 
+PRODUCT_PACKAGES += \
+	XperiaSettings
+
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 $(call inherit-product-if-exists, vendor/sony/yuga/yuga-vendor.mk)
