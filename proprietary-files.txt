@@ -93,9 +93,9 @@ lib/libCommandSvc.so
 lib/libMPU3050.so
 lib/libMiscTaAccessor.so
 lib/libQSEEComAPI.so
+lib/lib_get_secure_mode.so
 lib/libacdbloader.so
 lib/libals.so
-lib/libalsautils.so
 lib/libaudcal.so
 lib/libaudioalsa.so
 lib/libaudioparsers.so
@@ -108,6 +108,7 @@ lib/libcald_util.so
 lib/libcamera_clientsemc.so
 lib/libcameralight.so
 lib/libconfigdb.so
+lib/libcredential-manager-service.so
 lib/libcsd-client.so
 lib/libdiag.so
 lib/libdrmdiag.so
