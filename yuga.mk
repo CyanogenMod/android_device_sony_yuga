@@ -28,23 +28,26 @@ PRODUCT_COPY_FILES += \
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi xxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
-# Configuration scripts
+# HW Settings
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/config/sensors.conf:system/etc/sensors.conf \
     $(LOCAL_PATH)/prebuilt/hw_config.sh:system/etc/hw_config.sh \
     $(LOCAL_PATH)/prebuilt/pre_hw_config.sh:system/etc/pre_hw_config.sh
 
+# Sensors
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/system/etc/sensors.conf:system/etc/sensors.conf
+
 # Device specific init
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/config/init.device.rc:root/init.device.rc
+    $(LOCAL_PATH)/rootdir/init.device.rc:root/init.device.rc
 
 # USB function switching
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/config/init.sony.usb.rc:root/init.sony.usb.rc
+    $(LOCAL_PATH)/rootdir/init.sony.usb.rc:root/init.sony.usb.rc
 
+# Vold
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/config/vold.fstab:system/etc/vold.fstab \
-    $(LOCAL_PATH)/config/media_profiles.xml:system/etc/media_profiles.xml
+    $(LOCAL_PATH)/rootdir/vold.fstab:system/etc/vold.fstab
 
 # Device specific part for two-stage boot
 PRODUCT_COPY_FILES += \
@@ -52,16 +55,16 @@ PRODUCT_COPY_FILES += \
 
 # Key layouts and touchscreen
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/config/clearpad.idc:system/usr/idc/clearpad.idc \
-    $(LOCAL_PATH)/config/Button_Jack.kl:system/usr/keylayout/Button_Jack.kl \
-    $(LOCAL_PATH)/config/atmel_mxt_ts.kl:system/usr/keylayout/atmel_mxt_ts.kl \
-    $(LOCAL_PATH)/config/clearpad.kl:system/usr/keylayout/clearpad.kl \
-    $(LOCAL_PATH)/config/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
-    $(LOCAL_PATH)/config/keypad_8960.kl:system/usr/keylayout/keypad_8960.kl \
-    $(LOCAL_PATH)/config/keypad_8960_liquid.kl:system/usr/keylayout/keypad_8960_liquid.kl
+    $(LOCAL_PATH)/rootdir/system/usr/idc/clearpad.idc:system/usr/idc/clearpad.idc \
+    $(LOCAL_PATH)/rootdir/system/usr/keylayout/clearpad.kl:system/usr/keylayout/clearpad.kl \
+    $(LOCAL_PATH)/rootdir/system/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
+    $(LOCAL_PATH)/rootdir/system/usr/keylayout/keypad_8960.kl:system/usr/keylayout/keypad_8960.kl \
+    $(LOCAL_PATH)/rootdir/system/usr/keylayout/mhl-rcp.kl:system/usr/keylayout/mhl-rcp.kl \
+    $(LOCAL_PATH)/rootdir/system/usr/keylayout/pmic8xxx_pwrkey.kcm:system/usr/keylayout/pmic8xxx_pwrkey.kcm \
+    $(LOCAL_PATH)/rootdir/system/usr/keylayout/pmic8xxx_pwrkey.kl:system/usr/keylayout/pmic8xxx_pwrkey.kl
 
 PRODUCT_PACKAGES += \
-	XperiaSettings
+    XperiaSettings
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
