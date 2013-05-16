@@ -2,7 +2,7 @@
 
 /boot		emmc	/dev/block/platform/msm_sdcc.1/by-name/boot
 /system		ext4	/dev/block/platform/msm_sdcc.1/by-name/system
-/cache		ext4	/dev/block/platform/msm_sdcc.1/by-name/cache
+/cache		ext4	/dev/block/mmcblk0p25
 /data		ext4	/dev/block/platform/msm_sdcc.1/by-name/userdata	 length=-16384
 /sdcard		datamedia	/dev/null
-/external_sd		auto	/dev/block/mmcblk1p1	/dev/block/mmcblk1
+/external_sd	  auto	/dev/block/mmcblk1p1	/dev/block/mmcblk1
