@@ -19,6 +19,7 @@ DEVICE_PACKAGE_OVERLAYS += device/sony/yuga/overlay
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
 
 # This device is xhdpi.  However the platform doesn't
@@ -48,6 +49,11 @@ PRODUCT_COPY_FILES += \
 # Vold
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/system/etc/vold.fstab:system/etc/vold.fstab
+
+# Audio
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/system/etc/audio_policy.conf:system/etc/audio_policy.conf \
+    $(LOCAL_PATH)/rootdir/system/etc/snd_soc_msm/snd_soc_msm_2x_Fusion3:system/etc/snd_soc_msm/snd_soc_msm_2x_Fusion3
 
 # Device specific part for two-stage boot
 PRODUCT_COPY_FILES += \
