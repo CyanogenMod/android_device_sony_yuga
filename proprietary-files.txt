@@ -193,4 +193,4 @@ vendor/camera/SOI13BS2_DW9735.dat
 vendor/camera/SOI13BS2_IMX135.dat
 vendor/camera/flash.dat
 vendor/camera/product.dat
-vendor/firmware/libpn544_fw.so
+vendor/firmware/libpn544_fw_c3.so:vendor/firmware/libpn544_fw.so
