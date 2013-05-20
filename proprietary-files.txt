@@ -71,7 +71,6 @@ lib/hw/camera.msm8960.so
 lib/hw/camera.qcom.so
 lib/hw/gps.default.so
 lib/hw/nfc.msm8960.so
-lib/libCommandSvc.so
 lib/libMPU3050.so
 lib/libMiscTaAccessor.so
 lib/libQSEEComAPI.so
@@ -79,8 +78,6 @@ lib/lib_get_secure_mode.so
 lib/libacdbloader.so
 lib/libals.so
 lib/libaudcal.so
-lib/libaudioalsa.so
-lib/libaudioparsers.so
 lib/libcald_client.so
 lib/libcald_hal.so
 lib/libcald_imageutil.so
@@ -89,16 +86,12 @@ lib/libcald_server.so
 lib/libcald_util.so
 lib/libcamera_clientsemc.so
 lib/libcameralight.so
-lib/libconfigdb.so
 lib/libcredential-manager-service.so
 lib/libcsd-client.so
 lib/libdiag.so
 lib/libdrmdiag.so
 lib/libdrmfs.so
 lib/libdsi_netctrl.so
-lib/libdsprofile.so
-lib/libdss.so
-lib/libdsucsd.so
 lib/libdsutils.so
 lib/libface.so
 lib/libfmradio.so
@@ -119,7 +112,6 @@ lib/libmercury.so
 lib/libmiscta.so
 lib/libmllite.so
 lib/libmlplatform.so
-lib/libmm-color-convertor.so
 lib/libmmcamera_frameproc.so
 lib/libmmcamera_hdr_lib.so
 lib/libmmcamera_image_stab.so
@@ -129,7 +121,6 @@ lib/libmmcamera_plugin.so
 lib/libmmcamera_statsproc31.so
 lib/libmmcamera_wavelet_lib.so
 lib/libmmjpeg.so
-lib/libmmjpeg_interface.so
 lib/libmmstillomx.so
 lib/libmpl.so
 lib/libnetmgr.so
