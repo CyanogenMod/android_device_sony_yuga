@@ -14,7 +14,6 @@ bin/qcks
 bin/qmuxd
 bin/qseecomd
 bin/rmt_storage
-bin/startupflag
 bin/ta2bin
 bin/ta_param_loader
 bin/ta_qmi_client
