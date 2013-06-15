@@ -70,5 +70,5 @@ $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-dalv
 # call hwui memory config
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
 
-# call the proprietary setup
-$(call inherit-product-if-exists, vendor/sony/yuga/yuga-vendor.mk)
+# Include non-opensource parts
+$(call inherit-product, vendor/sony/yuga/yuga-vendor.mk)
