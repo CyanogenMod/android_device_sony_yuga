@@ -64,7 +64,6 @@ etc/firmware/tzsuntory.b02
 etc/firmware/tzsuntory.b03
 etc/firmware/tzsuntory.mdt
 etc/flashled_calc_parameters.cfg
-lib/hw/camera.msm8960.so:lib/hw/vendor-camera.msm8960.so
 lib/hw/camera.qcom.so:lib/hw/vendor-camera.qcom.so
 lib/hw/gps.default.so
 lib/hw/nfc.msm8960.so
@@ -73,6 +72,7 @@ lib/libMiscTaAccessor.so
 lib/libQSEEComAPI.so
 lib/lib_get_secure_mode.so
 lib/libacdbloader.so
+lib/libadsprpc.so
 lib/libals.so
 lib/libaudcal.so
 lib/libcald_client.so
@@ -109,15 +109,22 @@ lib/libmercury.so
 lib/libmiscta.so
 lib/libmllite.so
 lib/libmlplatform.so
+lib/libmmcamera_3a_legacy.so
+lib/libmmcamera_faceproc.so
 lib/libmmcamera_frameproc.so
 lib/libmmcamera_hdr_lib.so
 lib/libmmcamera_image_stab.so
 lib/libmmcamera_imx091.so
+lib/libmmcamera_interface.so
 lib/libmmcamera_interface2.so
 lib/libmmcamera_plugin.so
 lib/libmmcamera_statsproc31.so
+lib/libmmcamera_tintless_algo.so
+lib/libmmcamera_tintless_wrapper.so
 lib/libmmcamera_wavelet_lib.so
 lib/libmmjpeg.so
+lib/libmmjpeg_interface.so
+lib/libmmmpod.so
 lib/libmmstillomx.so
 lib/libmpl.so
 lib/libnetmgr.so
@@ -139,7 +146,6 @@ lib/libril-qc-qmi-1.so
 lib/libsensors_akm8963.so
 lib/libsys-utils.so
 lib/libta.so
-vendor/camera/KMO08BN0.dat
 vendor/camera/KMO08BN0_IMX111.dat
 vendor/camera/LGI02BN0.dat
 vendor/camera/LGI02BN0_IMX132.dat
@@ -153,7 +159,6 @@ vendor/camera/SEM13BS0_WV570.dat
 vendor/camera/SEM13BS1.dat
 vendor/camera/SEM13BS1_IMX135.dat
 vendor/camera/SEM13BS1_WV570.dat
-vendor/camera/SOI08BN1.dat
 vendor/camera/SOI08BN1_IMX111.dat
 vendor/camera/SOI13BS1.dat
 vendor/camera/SOI13BS1_DW9735.dat
@@ -161,5 +166,6 @@ vendor/camera/SOI13BS1_IMX135.dat
 vendor/camera/SOI13BS2.dat
 vendor/camera/SOI13BS2_DW9735.dat
 vendor/camera/SOI13BS2_IMX135.dat
+vendor/camera/SOI13BS9.dat
 vendor/camera/flash.dat
 vendor/camera/product.dat
