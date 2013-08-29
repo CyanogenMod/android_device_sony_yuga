@@ -63,8 +63,6 @@ etc/firmware/tzsuntory.b01
 etc/firmware/tzsuntory.b02
 etc/firmware/tzsuntory.b03
 etc/firmware/tzsuntory.mdt
-etc/firmware/wcd9310/wcd9310_anc.bin
-etc/firmware/wcd9310/wcd9310_mbhc.bin
 etc/flashled_calc_parameters.cfg
 lib/hw/camera.msm8960.so:lib/hw/vendor-camera.msm8960.so
 lib/hw/camera.qcom.so:lib/hw/vendor-camera.qcom.so
