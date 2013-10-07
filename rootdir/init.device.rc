@@ -11,20 +11,6 @@ on boot
     chown system system /sys/class/leds/lm3533-lcd-bl/brightness
     chmod 660 /sys/class/leds/lm3533-lcd-bl/brightness
 
-    # LED
-    chown system system /sys/class/leds/lm3533-red/brightness
-    chmod 660 /sys/class/leds/lm3533-red/brightness
-    chown system system /sys/class/leds/lm3533-green/brightness
-    chmod 660 /sys/class/leds/lm3533-green/brightness
-    chown system system /sys/class/leds/lm3533-blue/brightness
-    chmod 660 /sys/class/leds/lm3533-blue/brightness
-    chown system system /sys/class/leds/lm3533-red/pattern
-    chmod 660 /sys/class/leds/lm3533-red/pattern
-    chown system system /sys/class/leds/lm3533-green/pattern
-    chmod 660 /sys/class/leds/lm3533-green/pattern
-    chown system system /sys/class/leds/lm3533-blue/pattern
-    chmod 660 /sys/class/leds/lm3533-blue/pattern
-
     # Vibrator
     chown system system /sys/class/timed_output/vibrator/level
 
