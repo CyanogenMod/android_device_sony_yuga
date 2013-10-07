@@ -1,6 +1,5 @@
 /*
- * Copyright (C) 2012 The Android Open Source Project
- * Copyright (C) 2012 The CyanogenMod Project <http://www.cyanogenmod.org>
+ * Copyright (C) 2012-2013 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,19 +14,7 @@
  * limitations under the License.
  */
 
-char const*const LCD_BACKLIGHT_FILE		= "/sys/class/leds/lm3533-lcd-bl/brightness";
-char const*const LCD_BACKLIGHT2_FILE		= "/dev/null";
-char const*const RED_LED_FILE			= "/sys/class/leds/lm3533-red/brightness";
-char const*const GREEN_LED_FILE			= "/sys/class/leds/lm3533-green/brightness";
-char const*const BLUE_LED_FILE			= "/sys/class/leds/lm3533-blue/brightness";
-
-char const*const LED_FILE_PATTERN[]		= {
-"/sys/class/leds/lm3533-red/pattern",
-"/sys/class/leds/lm3533-green/pattern",
-"/sys/class/leds/lm3533-blue/pattern",
-};
-
-char const*const PATTERNOFF			= "0,0,0,0";
-
-char const*const ALS_FILE			= "/sys/devices/i2c-0/0-0036/als_enable";
-
+char const*const LCD_BACKLIGHT_FILE  = "/sys/class/leds/lm3533-lcd-bl/brightness";
+char const*const LCD_BACKLIGHT2_FILE = "/dev/null";
+char const*const MAX_BRIGHTNESS_FILE = "/sys/class/leds/lm3533-lcd-bl/max_brightness";
+const int LCD_BRIGHTNESS_MIN         = 10;
