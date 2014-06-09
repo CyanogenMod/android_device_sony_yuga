@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # inherit from the common fusion3 definitions
--include device/sony/fusion3-common/BoardConfigCommon.mk
+include device/sony/fusion3-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
 -include vendor/sony/yuga/BoardConfigVendor.mk
@@ -35,4 +35,4 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x01400000
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1056964608
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 2147483648
 
-BOARD_HARDWARE_CLASS := device/sony/yuga/cmhw
+BOARD_HARDWARE_CLASS += device/sony/yuga/cmhw
