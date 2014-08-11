@@ -27,6 +27,15 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/yuga/bluetooth
 
 TARGET_KERNEL_CONFIG := cm_fusion3_yuga_defconfig
 
+# Dex-preoptimization to speed up first boot sequence
+ifeq ($(HOST_OS),linux)
+  ifeq ($(TARGET_BUILD_VARIANT),user)
+    ifeq ($(WITH_DEXPREOPT),)
+      WITH_DEXPREOPT := true
+    endif
+  endif
+endif
+
 # Partition information
 BOARD_VOLD_MAX_PARTITIONS := 26
 
