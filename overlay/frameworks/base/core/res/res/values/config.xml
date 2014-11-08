@@ -107,12 +107,12 @@
             16 - App switch
             32 - Camera
          For example, a device with Home, Back and Menu keys would set this
-         config to 7. -->
-    <integer name="config_deviceHardwareKeys">0</integer>
+         config to 7.
+    <integer name="config_deviceHardwareKeys">0</integer> -->
 
-    <!-- LED Flashlight -->
-    <bool name="config_enableTorch">true</bool>
+    <!-- LED Flashlight
+    <bool name="config_enableTorch">true</bool> -->
 
-    <!-- SD card is hot-pluggable on this device -->
-    <bool name="config_batterySdCardAccessibility">true</bool>
+    <!-- SD card is hot-pluggable on this device
+    <bool name="config_batterySdCardAccessibility">true</bool> -->
 </resources>
