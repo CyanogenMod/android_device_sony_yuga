@@ -27,6 +27,8 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/yuga/bluetooth
 
 TARGET_KERNEL_CONFIG := cm_fusion3_yuga_defconfig
 
+TARGET_DISPLAY_USE_RETIRE_FENCE := true
+
 # Partition information
 BOARD_VOLD_MAX_PARTITIONS := 26
 
