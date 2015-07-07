@@ -1,7 +1,5 @@
 #!/sbin/busybox sh
 
-export BOOTREC_EVENT_NODE="/dev/input/event8 c 13 72"
-export BOOTREC_EVENT="/dev/input/event8"
 export BOOTREC_LED_RED="/sys/class/leds/lm3533-red/brightness"
 export BOOTREC_LED_GREEN="/sys/class/leds/lm3533-green/brightness"
 export BOOTREC_LED_BLUE="/sys/class/leds/lm3533-blue/brightness"
