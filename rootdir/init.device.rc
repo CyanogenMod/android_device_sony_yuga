@@ -7,6 +7,8 @@ on boot
     chown system system /sys/class/leds/lm3533-lcd-bl/brightness
     chmod 660 /sys/class/leds/lm3533-lcd-bl/brightness
 
+    write /sys/class/leds/lm3533-lcd-bl/brightness 255
+
     # Vibrator
     chown system system /sys/class/timed_output/vibrator/level
 
