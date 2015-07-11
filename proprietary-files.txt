@@ -1,4 +1,3 @@
-bin/chargemon
 bin/efsks
 bin/illumination_service
 bin/qcks
