@@ -1,5 +1,4 @@
 bin/efsks
-bin/illumination_service
 bin/qcks
 bin/updatemiscta
 etc/firmware/apps.mbn
