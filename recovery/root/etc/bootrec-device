@@ -1,7 +1,0 @@
-#!/sbin/busybox sh
-
-export BOOTREC_LED_RED="/sys/class/leds/lm3533-red/brightness"
-export BOOTREC_LED_GREEN="/sys/class/leds/lm3533-green/brightness"
-export BOOTREC_LED_BLUE="/sys/class/leds/lm3533-blue/brightness"
-export BOOTREC_FOTA_NODE="/dev/block/mmcblk0p23 b 179 23"
-export BOOTREC_FOTA="/dev/block/mmcblk0p23"
