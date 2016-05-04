@@ -115,6 +115,10 @@
     <ctl name="SLIM_3_RX Channels" value="One" />
     <ctl name="HDMI_RX Channels" value="Two" />
 
+    <!-- echo reference -->
+    <ctl name="EC_REF_RX" value="NONE" />
+    <!-- echo reference end -->
+
     <!-- These are audio route (FE to BE) specific mixer settings -->
     <path name="deep-buffer-playback">
         <ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia1" value="1" />
@@ -272,6 +276,10 @@
         <path name="handset" />
     </path>
 
+    <path name="voice-handset">
+        <path name="handset" />
+    </path>
+
     <path name="voice-speaker">
         <path name="speaker" />
     </path>
@@ -356,6 +364,10 @@
         <ctl name="SLIM TX8 MUX" value="DEC9" />
         <ctl name="DEC9 MUX" value="ADC3" />
         <ctl name="SLIM_0_TX Channels" value="Two" />
+    </path>
+
+    <path name="echo-reference">
+        <ctl name="EC_REF_RX" value="SLIM_RX" />
     </path>
 
     <path name="speaker-dmic-broadside">
