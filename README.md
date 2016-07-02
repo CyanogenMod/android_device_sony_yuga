@@ -1,2 +1,2 @@
-android_device_sony_yuga
-========================
+Xperia Z - CyanogenMod 13.0
+===========================
