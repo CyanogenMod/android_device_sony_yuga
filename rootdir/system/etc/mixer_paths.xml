@@ -113,11 +113,21 @@
     <ctl name="SLIM_0_RX Channels" value="One" />
     <ctl name="SLIM_0_TX Channels" value="One" />
     <ctl name="SLIM_3_RX Channels" value="One" />
+    <ctl name="INTERNAL_FM_RX Audio Mixer MultiMedia4" value="0" />
     <ctl name="HDMI_RX Channels" value="Two" />
 
     <!-- echo reference -->
     <ctl name="EC_REF_RX" value="NONE" />
     <!-- echo reference end -->
+
+    <!-- fm -->
+    <ctl name="SLIMBUS_0_RX Port Mixer INTERNAL_FM_TX" value="0" />
+    <ctl name="SLIMBUS_DL_HL Switch" value="0" />
+    <ctl name="MultiMedia1 Mixer INTERNAL_FM_TX" value="0" />
+    <ctl name="MultiMedia2 Mixer INTERNAL_FM_TX" value="0" />
+    <ctl name="INTERNAL_FM_RX Audio Mixer MultiMedia1" value="0" />
+    <ctl name="INTERNAL_FM_RX Audio Mixer MultiMedia5" value="0" />
+    <!-- fm end -->
 
     <!-- These are audio route (FE to BE) specific mixer settings -->
     <path name="deep-buffer-playback">
@@ -137,6 +147,10 @@
         <ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia1" value="1" />
     </path>
 
+    <path name="deep-buffer-playback transmission-fm">
+        <ctl name="INTERNAL_FM_RX Audio Mixer MultiMedia1" value="1" />
+    </path>
+
     <path name="low-latency-playback">
         <ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia5" value="1" />
     </path>
@@ -153,6 +167,10 @@
         <ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia5" value="1" />
     </path>
 
+    <path name="low-latency-playback transmission-fm">
+        <ctl name="INTERNAL_FM_RX Audio Mixer MultiMedia5" value="1" />
+    </path>
+
     <path name="multi-channel-playback hdmi">
         <ctl name="HDMI Mixer MultiMedia2" value="1" />
     </path>
@@ -165,12 +183,24 @@
         <ctl name="MultiMedia1 Mixer INTERNAL_BT_SCO_TX" value="1" />
     </path>
 
+    <path name="audio-record capture-fm">
+        <ctl name="MultiMedia1 Mixer INTERNAL_FM_TX" value="1" />
+    </path>
+
+    <path name="fm-virtual-record capture-fm">
+        <ctl name="MultiMedia2 Mixer INTERNAL_FM_TX" value="1" />
+    </path>
+
     <path name="low-latency-record">
         <ctl name="MultiMedia5 Mixer SLIM_0_TX" value="1" />
     </path>
 
     <path name="low-latency-record bt-sco">
         <ctl name="MultiMedia5 Mixer INTERNAL_BT_SCO_TX" value="1" />
+    </path>
+
+    <path name="low-latency-record capture-fm">
+        <ctl name="MultiMedia5 Mixer INTERNAL_FM_TX" value="1" />
     </path>
 
     <path name="voice-call">
@@ -307,6 +337,9 @@
         <ctl name="RX6 DSM MUX" value="DSM_INV" />
     </path>
 
+    <path name="transmission-fm">
+    </path>
+
     <path name="hdmi">
     </path>
 
@@ -333,6 +366,9 @@
     </path>
 
     <path name="bt-sco-mic">
+    </path>
+
+    <path name="capture-fm">
     </path>
 
     <!-- Dual MIC devices -->
@@ -368,6 +404,18 @@
 
     <path name="echo-reference">
         <ctl name="EC_REF_RX" value="SLIM_RX" />
+    </path>
+
+    <path name="play-fm">
+        <ctl name="Internal FM RX Volume" value="1" />
+        <ctl name="SLIMBUS_0_RX Port Mixer INTERNAL_FM_TX" value="1" />
+        <ctl name="SLIMBUS_DL_HL Switch" value="1" />
+    </path>
+
+    <path name="play-fm usb-headphones">
+        <ctl name="Internal FM RX Volume" value="1" />
+        <ctl name="AFE_PCM_RX Port Mixer INTERNAL_FM_TX" value="1" />
+        <ctl name="SLIMBUS_DL_HL Switch" value="1" />
     </path>
 
     <path name="speaker-dmic-broadside">
