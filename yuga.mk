@@ -33,8 +33,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # HW Settings
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/hw_config.sh:system/etc/hw_config.sh \
-    $(LOCAL_PATH)/prebuilt/pre_hw_config.sh:system/etc/pre_hw_config.sh
+    $(LOCAL_PATH)/prebuilt/hw_config.sh:system/etc/hw_config.sh
 
 # Sensors
 PRODUCT_COPY_FILES += \
